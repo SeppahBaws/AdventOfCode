@@ -6,6 +6,7 @@ import (
 	"os"
 
 	challenges_01 "AdventOfCode2024/challenges/day01"
+	challenges_02 "AdventOfCode2024/challenges/day02"
 )
 
 func main() {
@@ -17,6 +18,7 @@ func main() {
 
 	challenges := map[string]func(){
 		"01": challenges_01.Run,
+		"02": challenges_02.Run,
 	}
 
 	challenge, ok := challenges[challengeName]
