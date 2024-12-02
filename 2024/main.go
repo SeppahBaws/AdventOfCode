@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"AdventOfCode2024/challenges"
+	challenges_01 "AdventOfCode2024/challenges/day01"
 )
 
 func main() {
@@ -16,7 +16,7 @@ func main() {
 	challengeName := os.Args[1]
 
 	challenges := map[string]func(){
-		"01": challenges.Day01,
+		"01": challenges_01.Run,
 	}
 
 	challenge, ok := challenges[challengeName]

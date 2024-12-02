@@ -1,4 +1,4 @@
-package challenges
+package challenges_01
 
 import (
 	"bufio"
@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-func Day01() {
+func Run() {
 	// Read file
 	file, err := os.Open("inputs/day01.txt")
 	if err != nil {
